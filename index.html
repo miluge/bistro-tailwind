@@ -1,0 +1,384 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <meta content="" property="og:title">
+  <meta content="" property="og:type">
+  <meta content="" property="og:url">
+  <meta content="" property="og:image">
+
+  <link href="site.webmanifest" rel="manifest">
+  <link href="icon.png" rel="apple-touch-icon">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="css/tailwind.css" rel="stylesheet">
+  <meta content="#fafafa" name="theme-color">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+<header @keydown.escape="isOpen = false"
+        class="relative flex h-screen w-full overflow-hidden"
+        x-data="{ isOpen: false }">
+  <!-- Navbar -->
+  <nav
+    class="relative z-20 top-0 right-0 w-full inline-block px-10 pt-5 text-2xl text-white bg-transparent bg-opacity-50 rounded-xl">
+    <div class="flex justify-between items-center">
+      <div class="hidden lg:block">
+        <ul class="flex">
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest font-bold" href="#">ACASA</a>
+          </li>
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest" href="#">ACASA</a>
+          </li>
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest" href="#">ACASA</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img alt="Picnic Bistro Logo" class="h-20 md:h-48" src="assets/img/picniclogo3-1980x871.svg">
+      </div>
+      <div class="hidden lg:block">
+        <ul class="flex">
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest font-thin" href="meniu.html">MENIU</a>
+          </li>
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest" href="#">REZERVARI</a>
+          </li>
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          :class="{ 'transition transform-180': isOpen }"
+          @click="isOpen = !isOpen"
+          class="block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+          type="button"
+        >
+          <svg
+            class="h-6 w-6 fill-current"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+              fill-rule="evenodd"
+              x-show="isOpen"
+            />
+            <path
+              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+              fill-rule="evenodd"
+              x-show="!isOpen"
+            />
+          </svg>
+        </button>
+      </div>
+
+
+    </div>
+    <div
+      :class="{ 'block': isOpen, 'hidden': !isOpen }"
+      @click.away="isOpen = false"
+      class="w-full h-full relative z-50 right-10flex-grow lg:hidden lg:flex lg:items-center lg:w-auto"
+      x-show.transition="true"
+    >
+      <ul
+        class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center"
+      >
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block py-2 px-4 text-white no-underline"
+            href="#"
+          >Active
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            href="#"
+          >link
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            href="#"
+          >link
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            href="#"
+          >link
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Mobile Links -->
+  <!-- Video Background Element -->
+  <video autoplay class="absolute z-10 w-auto min-w-full object-fill min-h-full max-w-none" id="myVideo"
+         loop muted poster="assets/img/rezervari_image.jpg">
+    <source src="assets/img/video/picnic.mp4" type="video/mp4">
+  </video>
+
+</header>
+
+<!-- End of header -->
+<div
+  class="fixed top-0 right-0 m-8 p-3 z-50 text-xs font-mono text-white h-6 w-6 rounded-full flex items-center justify-center bg-gray-700 sm:bg-pink-500 md:bg-orange-500 lg:bg-green-500 xl:bg-blue-500">
+  <div class="block  sm:hidden md:hidden lg:hidden xl:hidden">al</div>
+  <div class="hidden sm:block  md:hidden lg:hidden xl:hidden">sm</div>
+  <div class="hidden sm:hidden md:block  lg:hidden xl:hidden">md</div>
+  <div class="hidden sm:hidden md:hidden lg:block  xl:hidden">lg</div>
+  <div class="hidden sm:hidden md:hidden lg:hidden xl:block">xl</div>
+</div>
+<!-- Main content -->
+
+<main class="container mx-auto">
+  <section class="py-20 border-b-2 border-solid">
+    <div class="flex flex-wrap md:flex-nowrap p-5">
+      <div class="flex items-center justify-center p-5 mx-auto w-full lg:w-1/2">
+        <img alt="Menu Link Image" class="object-fill" src="assets/img/meniu.png">
+      </div>
+      <div class="flex flex-col p-5 items-center text-center justify-center w-full lg:w-1/2">
+        <h2 class="text-4xl tracking-widest uppercase pb-5" data-scroll>Discover our menu</h2>
+        <p class="text-2xl mb-12 p-5" data-scroll>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut
+          iaculis lectus. In
+          lobortis tortor eget venenatis ultrices. Fusce rhoncus tincidunt purus et egestas. Maecenas erat nisl, porta
+          nec
+          fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
+          ipsum,
+          in porta lectus viverra eget.</p>
+        <button class="px-3 py-4">
+          <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">Go to menu</a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="py-20">
+    <div class="grid grid-cols-1 md:grid-cols-4 divide-y-0">
+      <div class="flex flex-col items-center justify-center">
+        <img class="h-64 m-5" src="assets/img/rezervari.png">
+        <h2 class="font-sans text-3xl tracking-widest">About us</h2>
+        <div class="px-20 text-center">
+          <h2 class="p-5"> Maecenas erat nisl, porta
+            nec
+            fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
+            ipsum,
+            in porta lectus viverra eget
+          </h2>
+          <button class="px-3 py-4">
+            <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">About us</a>
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img class="h-64 m-5" src="assets/img/rezervari.png">
+        <h2 class="font-sans text-3xl tracking-widest">About us</h2>
+        <div class="px-20 text-center">
+          <h2 class="p-5"> Maecenas erat nisl, porta
+            nec
+            fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
+            ipsum,
+            in porta lectus viverra eget
+          </h2>
+          <button class="px-3 py-4">
+            <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">About us</a>
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img class="h-64 m-5" src="assets/img/rezervari.png">
+        <h2 class="font-sans text-3xl tracking-widest">About us</h2>
+        <div class="px-20 text-center">
+          <h2 class="p-5"> Maecenas erat nisl, porta
+            nec
+            fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
+            ipsum,
+            in porta lectus viverra eget
+          </h2>
+          <button class="px-3 py-4">
+            <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">About us</a>
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img class="h-64 m-5" src="assets/img/rezervari.png">
+        <h2 class="font-sans text-3xl tracking-widest">About us</h2>
+        <div class="px-20 text-center">
+          <h2 class="p-5"> Maecenas erat nisl, porta
+            nec
+            fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
+            ipsum,
+            in porta lectus viverra eget
+          </h2>
+          <button class="px-3 py-4">
+            <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">About us</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 border-b-2 border-solid">
+    <div class="flex flex-wrap-reverse md:flex-nowrap w-full p-5">
+      <div class="flex flex-col p-5 items-center text-center justify-center w-full lg:w-1/2">
+        <h2 class="text-4xl tracking-widest uppercase pb-5">Discover our menu</h2>
+        <p class="text-2xl mb-12 p-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut
+          iaculis lectus. In
+          lobortis tortor eget venenatis ultrices. Fusce rhoncus tincidunt purus et egestas. Maecenas erat nisl, porta
+          nec
+          fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
+          ipsum,
+          in porta lectus viverra eget.</p>
+        <button class="px-3 py-4">
+          <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">Go to menu</a>
+        </button>
+      </div>
+      <div class="flex items-center justify-center p-5 mx-auto w-full lg:w-1/2">
+        <img alt="Menu Link Image" class="object-fill" src="assets/img/meniu.png">
+      </div>
+    </div>
+  </section>
+  <section class="py-12 md:py-20">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap -mx-3">
+        <div class="relative w-full lg:w-1/3 mb-8 lg:mb-0 text-center lg:text-left">
+          <div class="max-w-md lg:max-w-xs lg:pr-16 mx-auto lg:ml-0 mb-6 lg:mb-0">
+            <h2 class="text-3xl md:text-4xl mb-4 font-bold font-heading">Lorem ipsum dolor sit amet consectut domor</h2>
+            <p class="text-xs md:text-base text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed luctus eget justo et iaculis.</p>
+          </div>
+          <div class="lg:absolute lg:bottom-0 lg:left-0 flex justify-center">
+            <a class="mr-4" href="#">
+              <svg class="h-6 w-6 text-blue-600 hover:text-blue-500" fill="none" stroke="currentColor"
+                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 16l-4-4m0 0l4-4m-4 4h18" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"></path>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="h-6 w-6 text-blue-600 hover:text-blue-500" fill="none" stroke="currentColor"
+                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-2/3 flex flex-wrap px-3"><img alt=""
+                                                              class="rounded"
+                                                              src="https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1189&amp;q=80">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20">
+    <div class="container px-4 mx-auto">
+      <div class="pt-20 pb-24 px-8 md:px-16 rounded" style="background-color: #B3DDC6">
+        <div class="flex flex-wrap -mx-8">
+          <div class="w-full lg:w-1/2 px-8 flex">
+            <div class="my-auto">
+              <h2 class="text-3xl lg:text-4xl font-semibold text-white">Pay us a visit :</h2>
+              <p class="mt-2 mb-6 text-blueGray-50 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+                Sed luctus eget justo et iaculis.</p>
+              <h2 class="text-3xl lg:text-4xl font-semibold text-white">Suna-ne :</h2>
+              <p class="mt-2 mb-6 text-blueGray-50 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+                Sed luctus eget justo et iaculis.</p>
+              <a
+                class="inline-block py-4 px-8 text-xs border bg-white text-blue-600 font-semibold leading-none hover:bg-blue-600 hover:border-white hover:text-white rounded transition duration-300"
+                href="#">Get Started</a>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 px-8 mt-12 lg:mt-0">
+            <div class="embed-responsive aspect-ratio-4/3">
+              <iframe class="embed-responsive-item"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.2175996881056!2d6.02954901558172!3d47.231889379161586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d63382fe0bfed%3A0xabdd43f3c9204ccd!2sCitadelle%20de%20Besan%C3%A7on!5e0!3m2!1sfr!2sfr!4v1610898944130!5m2!1sfr!2sfr"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="container mx-auto">
+  <div class="flex flex-wrap-reverse lg:flex-nowrap items-center justify-center lg:justify-between">
+    <div class="flex justify-center h-64 w-full lg:w-1/4">
+      <img alt="Picnic Bistro Logo" class="h-20 md:h-48" src="assets/img/picniclogo3-1980x871.svg">
+    </div>
+    <div class="flex justify-center h-64 w-full lg:w-1/4">
+      <ul>
+        <li>Politica de utilizare a site-ului</li>
+        <li>Politica de cookies</li>
+        <li>Informatii GDPR</li>
+      </ul>
+    </div>
+    <div class="flex justify-center h-64 w-full lg:w-1/4">
+      <ul>
+        <li>Adresa :</li>
+        <li>Ineu, Bihor, romania Oradea</li>
+        <li>Phone :</li>
+        <li>0040 01 01 01 01</li>
+        <li>Orar</li>
+      </ul>
+    </div>
+    <div class="flex justify-center h-64 w-full lg:w-1/4">
+      <ul>
+        <li>Find us on social</li>
+        <li>instagram • facebook • soundcloud</li>
+        <li>Leave us a note</li>
+        <li>resengo • yelp • tripadvisor</li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex h-24 justify-center">
+    <a href="#">Dev by Guillaume Blondel</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+<script>
+  (function () {
+    var scroll = new LocomotiveScroll();
+  })();
+</script>
+<script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/navbar.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+</body>
+
+</html>

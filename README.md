@@ -5,6 +5,10 @@ Tailwind Restaurant Template
 
 npm install
 
-# See live demo :
+# See live demo 
 
 bistro-tailwind.netlify.app
+
+# Case studies
+
+Check the case study at blondelguillau.me

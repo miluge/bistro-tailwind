@@ -583,7 +583,7 @@ video {
 @font-face {
   font-family: 'Daikon';
 
-  src: local('Daikon'), url(/assets/fonts/Pepper-Type-Daikon-ExtraLight.ttf) format('ttf');
+  src: local('Daikon'), url('../assets/fonts/Pepper-Type-Daikon-ExtraLight.woff2') format('woff2');
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

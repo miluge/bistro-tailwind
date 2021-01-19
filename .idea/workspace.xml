@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70285739-79c2-498f-84d2-d9bc427186e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Pepper-Type-Daikon-ExtraLight.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tailwind.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tailwindcfg.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tailwindcfg.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/picniclogo3-1980x871.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/picniclogo3-1980x871.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -70,7 +69,7 @@
       <workItem from="1610980031651" duration="8605000" />
       <workItem from="1610999227075" duration="350000" />
       <workItem from="1611005771091" duration="12000" />
-      <workItem from="1611007593624" duration="8635000" />
+      <workItem from="1611007593624" duration="9405000" />
     </task>
     <task id="LOCAL-00001" summary="add daikon">
       <created>1610971869533</created>
@@ -93,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611057356662</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix font not loading on firefox">
+      <created>1611059685237</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611059685237</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +110,8 @@
     <MESSAGE value="add daikon" />
     <MESSAGE value="first commmit" />
     <MESSAGE value="index layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="index layout" />
+    <MESSAGE value="fix font not loading on firefox" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix font not loading on firefox" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

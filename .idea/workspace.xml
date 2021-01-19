@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70285739-79c2-498f-84d2-d9bc427186e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/picniclogo3-1980x871.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/picniclogo3-1980x871.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +67,7 @@
       <workItem from="1610980031651" duration="8605000" />
       <workItem from="1610999227075" duration="350000" />
       <workItem from="1611005771091" duration="12000" />
-      <workItem from="1611007593624" duration="9405000" />
+      <workItem from="1611007593624" duration="9749000" />
     </task>
     <task id="LOCAL-00001" summary="add daikon">
       <created>1610971869533</created>
@@ -99,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611059685237</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="assets logo version and refactor logo for individual pages">
+      <created>1611060761386</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611060761386</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +116,8 @@
     <MESSAGE value="first commmit" />
     <MESSAGE value="index layout" />
     <MESSAGE value="fix font not loading on firefox" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix font not loading on firefox" />
+    <MESSAGE value="assets logo version and refactor logo for individual pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="assets logo version and refactor logo for individual pages" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

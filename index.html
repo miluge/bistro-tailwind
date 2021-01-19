@@ -36,15 +36,15 @@
             <a class="text-menu--item tracking-widest font-bold" href="#">ACASA</a>
           </li>
           <li class="px-4 py-4">
-            <a class="text-menu--item tracking-widest" href="#">ACASA</a>
+            <a class="text-menu--item tracking-widest" href="#">DESPRE NOI</a>
           </li>
           <li class="px-4 py-4">
-            <a class="text-menu--item tracking-widest" href="#">ACASA</a>
+            <a class="text-menu--item tracking-widest" href="#">NE GASIM</a>
           </li>
         </ul>
       </div>
       <div>
-        <img alt="Picnic Bistro Logo" class="h-20 md:h-48" src="assets/img/picniclogo3-1980x871.svg">
+        <img alt="Picnic Bistro Logo" class="h-20 lg:h-32" src="assets/img/picniclogo3-1980x871.svg">
       </div>
       <div class="hidden lg:block">
         <ul class="flex">
@@ -52,7 +52,7 @@
             <a class="text-menu--item tracking-widest font-thin" href="meniu.html">MENIU</a>
           </li>
           <li class="px-4 py-4">
-            <a class="text-menu--item tracking-widest" href="#">REZERVARI</a>
+            <a class="text-menu--item tracking-widest" href="rezervari.html">REZERVARI</a>
           </li>
           <li class="px-4 py-4">
             <a class="text-menu--item tracking-widest" href="contact.html">CONTACT</a>
@@ -91,42 +91,58 @@
     <div
       :class="{ 'block': isOpen, 'hidden': !isOpen }"
       @click.away="isOpen = false"
-      class="w-full h-full relative z-50 right-10flex-grow lg:hidden lg:flex lg:items-center lg:w-auto"
+      class="w-full h-full z-50 lg:hidden lg:flex lg:items-center lg:w-auto text-right"
       x-show.transition="true"
     >
       <ul
-        class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center"
+        class="pt-6 lg:pt-0 list-reset lg:flex justify-start flex-1 items-center"
       >
         <li class="mr-3">
           <a
             @click="isOpen = false"
             class="inline-block py-2 px-4 text-white no-underline"
-            href="#"
-          >Active
+            href="index.html"
+          >HOME
           </a>
         </li>
         <li class="mr-3">
           <a
             @click="isOpen = false"
             class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-            href="#"
-          >link
+            href="despre-noi.html"
+          >DESPRE NOI
           </a>
         </li>
         <li class="mr-3">
           <a
             @click="isOpen = false"
             class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-            href="#"
-          >link
+            href="ne-gasim.html"
+          >NE GASIM
           </a>
         </li>
         <li class="mr-3">
           <a
             @click="isOpen = false"
             class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-            href="#"
-          >link
+            href="meniu.html"
+          >MENIU
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            href="rezervari.html"
+          >REZERVARI
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            href="contact.html"
+          >CONTACT
           </a>
         </li>
       </ul>
@@ -153,7 +169,7 @@
 <!-- Main content -->
 
 <main class="container mx-auto">
-  <section class="py-20 border-b-2 border-solid">
+  <section class="py-20">
     <div class="flex flex-wrap md:flex-nowrap p-5">
       <div class="flex items-center justify-center p-5 mx-auto w-full lg:w-1/2">
         <img alt="Menu Link Image" class="object-fill" src="assets/img/meniu.png">
@@ -163,156 +179,105 @@
         <p class="text-2xl mb-12 p-5" data-scroll>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut
           iaculis lectus. In
           lobortis tortor eget venenatis ultrices. Fusce rhoncus tincidunt purus et egestas. Maecenas erat nisl, porta
-          nec
-          fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
-          ipsum,
-          in porta lectus viverra eget.</p>
+          nec.</p>
         <button class="px-3 py-4">
-          <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">Go to menu</a>
+          <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="meniu.html">Go to menu</a>
         </button>
       </div>
     </div>
   </section>
   <section class="py-20">
-    <div class="grid grid-cols-1 md:grid-cols-4 divide-y-0">
-      <div class="flex flex-col items-center justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y-0">
+      <div class="flex flex-col items-center justify-center sm:mb-4 lg:mb-0">
         <img class="h-64 m-5" src="assets/img/rezervari.png">
-        <h2 class="font-sans text-3xl tracking-widest">About us</h2>
+        <h2 class="font-sans text-3xl tracking-widest uppercase mb-2">Events</h2>
         <div class="px-20 text-center">
-          <h2 class="p-5"> Maecenas erat nisl, porta
+          <p> Maecenas erat nisl, porta
             nec
             fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
             ipsum,
             in porta lectus viverra eget
-          </h2>
-          <button class="px-3 py-4">
-            <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">About us</a>
-          </button>
+          </p>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center sm:mb-4 lg:mb-0">
         <img class="h-64 m-5" src="assets/img/rezervari.png">
-        <h2 class="font-sans text-3xl tracking-widest">About us</h2>
+        <h2 class="font-sans text-3xl tracking-widest uppercase mb-2">About us</h2>
         <div class="px-20 text-center">
-          <h2 class="p-5"> Maecenas erat nisl, porta
+          <p> Maecenas erat nisl, porta
             nec
             fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
             ipsum,
             in porta lectus viverra eget
-          </h2>
-          <button class="px-3 py-4">
-            <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">About us</a>
-          </button>
+          </p>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center sm:mb-4 lg:mb-0">
         <img class="h-64 m-5" src="assets/img/rezervari.png">
-        <h2 class="font-sans text-3xl tracking-widest">About us</h2>
+        <h2 class="font-sans text-3xl tracking-widest uppercase mb-2">Specials</h2>
         <div class="px-20 text-center">
-          <h2 class="p-5"> Maecenas erat nisl, porta
+          <p> Maecenas erat nisl, porta
             nec
             fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
             ipsum,
             in porta lectus viverra eget
-          </h2>
-          <button class="px-3 py-4">
-            <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">About us</a>
-          </button>
+          </p>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center sm:mb-4 lg:mb-0">
         <img class="h-64 m-5" src="assets/img/rezervari.png">
-        <h2 class="font-sans text-3xl tracking-widest">About us</h2>
+        <h2 class="font-sans text-3xl tracking-widest uppercase mb-2">Gallery</h2>
         <div class="px-20 text-center">
-          <h2 class="p-5"> Maecenas erat nisl, porta
+          <p> Maecenas erat nisl, porta
             nec
             fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
             ipsum,
             in porta lectus viverra eget
-          </h2>
-          <button class="px-3 py-4">
-            <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">About us</a>
-          </button>
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <section class="py-20 border-b-2 border-solid">
-    <div class="flex flex-wrap-reverse md:flex-nowrap w-full p-5">
+  <section class="py-20">
+    <div class="flex flex-wrap md:flex-nowrap w-full p-5">
       <div class="flex flex-col p-5 items-center text-center justify-center w-full lg:w-1/2">
-        <h2 class="text-4xl tracking-widest uppercase pb-5">Discover our menu</h2>
-        <p class="text-2xl mb-12 p-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut
+        <h2 class="text-4xl tracking-widest uppercase pb-5">Only GOOD vibes</h2>
+        <p class="text-2xl mb-12 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut
           iaculis lectus. In
           lobortis tortor eget venenatis ultrices. Fusce rhoncus tincidunt purus et egestas. Maecenas erat nisl, porta
-          nec
-          fringilla in, tincidunt eget sem. Nunc in magna vitae lectus ultrices vestibulum. Maecenas rutrum rhoncus
-          ipsum,
-          in porta lectus viverra eget.</p>
-        <button class="px-3 py-4">
-          <a class="px-3 py-4 bg-black text-white font-sans uppercase tracking-widest" href="#">Go to menu</a>
-        </button>
+          nec.</p>
       </div>
       <div class="flex items-center justify-center p-5 mx-auto w-full lg:w-1/2">
         <img alt="Menu Link Image" class="object-fill" src="assets/img/meniu.png">
       </div>
     </div>
   </section>
-  <section class="py-12 md:py-20">
+  <section class="my-20 bg-fixed overflow-x-auto" style="background-image: url('assets/img/contact.jpg')">
     <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap -mx-3">
-        <div class="relative w-full lg:w-1/3 mb-8 lg:mb-0 text-center lg:text-left">
-          <div class="max-w-md lg:max-w-xs lg:pr-16 mx-auto lg:ml-0 mb-6 lg:mb-0">
-            <h2 class="text-3xl md:text-4xl mb-4 font-bold font-heading">Lorem ipsum dolor sit amet consectut domor</h2>
-            <p class="text-xs md:text-base text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed luctus eget justo et iaculis.</p>
+      <div class="pt-20 pb-24 px-8 md:px-16 rounded "
+      ">
+      <div class="flex flex-wrap -mx-8">
+        <div class="w-full lg:w-1/2 px-8 flex">
+          <div class="my-auto">
+            <h2 class="text-3xl lg:text-4xl font-semibold text-white">Pay us a visit :</h2>
+            <p class="mt-2 leading-loose font-sans uppercase tracking-wide font-bold text-white">PICNIC BISTRO</p>
+            <p class="mt-2 mb-6 leading-loose text-white">Ineu 1A, 417295, Bihor, RO</p>
+            <h2 class="text-3xl lg:text-4xl font-semibold text-white">Call us :</h2>
+            <p class="mt-2 mb-6 leading-loose text-white">
+              +40 742 742 642
+            </p>
+            <a
+              class="inline-block py-4 px-8 text-xs border bg-black text-white uppercase tracking-wide font-semibold leading-none hover:bg-white hover:border-white hover:text-black rounded-none transition duration-300"
+              href="#">Rezervati</a>
           </div>
-          <div class="lg:absolute lg:bottom-0 lg:left-0 flex justify-center">
-            <a class="mr-4" href="#">
-              <svg class="h-6 w-6 text-blue-600 hover:text-blue-500" fill="none" stroke="currentColor"
-                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 16l-4-4m0 0l4-4m-4 4h18" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2"></path>
-              </svg>
-            </a>
-            <a href="#">
-              <svg class="h-6 w-6 text-blue-600 hover:text-blue-500" fill="none" stroke="currentColor"
-                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="w-full lg:w-2/3 flex flex-wrap px-3"><img alt=""
-                                                              class="rounded"
-                                                              src="https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1189&amp;q=80">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="py-20">
-    <div class="container px-4 mx-auto">
-      <div class="pt-20 pb-24 px-8 md:px-16 rounded" style="background-color: #B3DDC6">
-        <div class="flex flex-wrap -mx-8">
-          <div class="w-full lg:w-1/2 px-8 flex">
-            <div class="my-auto">
-              <h2 class="text-3xl lg:text-4xl font-semibold text-white">Pay us a visit :</h2>
-              <p class="mt-2 mb-6 text-blueGray-50 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.
-                Sed luctus eget justo et iaculis.</p>
-              <h2 class="text-3xl lg:text-4xl font-semibold text-white">Suna-ne :</h2>
-              <p class="mt-2 mb-6 text-blueGray-50 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.
-                Sed luctus eget justo et iaculis.</p>
-              <a
-                class="inline-block py-4 px-8 text-xs border bg-white text-blue-600 font-semibold leading-none hover:bg-blue-600 hover:border-white hover:text-white rounded transition duration-300"
-                href="#">Get Started</a>
-            </div>
           </div>
           <div class="w-full lg:w-1/2 px-8 mt-12 lg:mt-0">
             <div class="embed-responsive aspect-ratio-4/3">
               <iframe class="embed-responsive-item"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.2175996881056!2d6.02954901558172!3d47.231889379161586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d63382fe0bfed%3A0xabdd43f3c9204ccd!2sCitadelle%20de%20Besan%C3%A7on!5e0!3m2!1sfr!2sfr!4v1610898944130!5m2!1sfr!2sfr"></iframe>
+                      allowfullscreen="" aria-hidden="false" frameborder="0" height="450"
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10868.916974462507!2d22.09788090472412!3d47.0749679541605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4570e157c679cb5!2sPicnic%20Bistro!5e0!3m2!1sfr!2sfr!4v1610973279353!5m2!1sfr!2sfr"
+                      style="border:0;" tabindex="0" width="600"></iframe>
+              "></iframe>
             </div>
           </div>
         </div>
@@ -327,31 +292,41 @@
     </div>
     <div class="flex justify-center h-64 w-full lg:w-1/4">
       <ul>
-        <li>Politica de utilizare a site-ului</li>
-        <li>Politica de cookies</li>
-        <li>Informatii GDPR</li>
+        <li class="font-sans text-2xl font-bold tracking-wide pb-6">SITE MENU</li>
+        <li class="pb-1">Despre noi</li>
+        <li class="pb-1">Ne gasim</li>
+        <li class="pb-1">Meniu</li>
+        <li class="pb-1">Rezervari</li>
+        <li class="pb-1">Contact</li>
+        <li class="pb-1">Politica de utilizare a site-ului</li>
+        <li class="pb-1">Politica de cookies</li>
+        <li class="pb-1">Informatii GDPR</li>
       </ul>
     </div>
     <div class="flex justify-center h-64 w-full lg:w-1/4">
       <ul>
-        <li>Adresa :</li>
+        <li class="font-sans text-2xl font-bold tracking-wide pb-4">FIND US</li>
+        <li class="font-sans  font-bold text-lg py-2">Adresa :</li>
         <li>Ineu, Bihor, romania Oradea</li>
-        <li>Phone :</li>
-        <li>0040 01 01 01 01</li>
+        <li class="font-sans  font-bold text-lg py-2">Phone :</li>
+        <li>+40 742 742 642</li>
         <li>Orar</li>
       </ul>
     </div>
-    <div class="flex justify-center h-64 w-full lg:w-1/4">
+    <div class="flex justify-center h-64 w-full ml-10 lg:-ml-0 lg:w-1/4">
       <ul>
-        <li>Find us on social</li>
+        <li class="font-sans text-2xl font-bold tracking-wide pb-4">SOCIAL</li>
+        <li class="font-sans font-bold text-lg py-2">Find us on social</li>
         <li>instagram • facebook • soundcloud</li>
-        <li>Leave us a note</li>
+        <li class="font-sans font-bold text-lg py-2">Leave us a note</li>
         <li>resengo • yelp • tripadvisor</li>
       </ul>
     </div>
   </div>
-  <div class="flex h-24 justify-center">
-    <a href="#">Dev by Guillaume Blondel</a>
+  <div class="flex justify-center mt-20 mb-5">
+    <p>
+      Dev by <a href="https://blondelguillau.me">Guillaume Blondel</a>
+    </p>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>

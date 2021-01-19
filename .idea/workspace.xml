@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70285739-79c2-498f-84d2-d9bc427186e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Pepper-Type-Daikon-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/contact.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/Capturepicpic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/detourCapture.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rezervari.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meniu.html" beforeDir="false" afterPath="$PROJECT_DIR$/meniu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +67,39 @@
       <option name="presentableId" value="Default" />
       <updated>1610818650237</updated>
       <workItem from="1610818654046" duration="64213000" />
-      <workItem from="1610969075273" duration="2662000" />
+      <workItem from="1610969075273" duration="6592000" />
+      <workItem from="1610976399947" duration="622000" />
+      <workItem from="1610980031651" duration="8605000" />
+      <workItem from="1610999227075" duration="350000" />
+      <workItem from="1611005771091" duration="12000" />
+      <workItem from="1611007593624" duration="6093000" />
     </task>
+    <task id="LOCAL-00001" summary="add daikon">
+      <created>1610971869533</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610971869533</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commmit">
+      <created>1610972063371</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610972063371</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="add daikon" />
+    <MESSAGE value="first commmit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commmit" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

@@ -65,11 +65,13 @@
               clip-rule="evenodd"
               d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
               fill-rule="evenodd"
+              fill="black"
               x-show="isOpen"
             />
             <path
               d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
               fill-rule="evenodd"
+              fill="black"
               x-show="!isOpen"
             />
           </svg>
@@ -90,7 +92,7 @@
         <li class="mr-3">
           <a
             @click="isOpen = false"
-            class="inline-block py-2 px-4 text-white no-underline"
+            class="inline-block py-2 px-4 text-gray-600 no-underline hover:text-gray-200 hover:text-underline"
             href="index.html"
           >HOME
           </a>
@@ -106,7 +108,7 @@
         <li class="mr-3">
           <a
             @click="isOpen = true"
-            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            class="inline-block text-gray-200 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
             href="rezervari.html"
           >REZERVARI
           </a>
@@ -201,9 +203,9 @@
       <ul>
         <li class="font-sans text-2xl font-bold tracking-wide pb-4">SOCIAL</li>
         <li class="font-sans font-bold text-lg py-2">Find us on social</li>
-        <li>instagram • facebook • soundcloud</li>
+        <li>instagram • facebook</li>
         <li class="font-sans font-bold text-lg py-2">Leave us a note</li>
-        <li>resengo • yelp • tripadvisor</li>
+        <li>yelp • tripadvisor</li>
       </ul>
     </div>
   </div>
@@ -214,7 +216,6 @@
   </div>
 </footer>
 <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>

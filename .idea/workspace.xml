@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70285739-79c2-498f-84d2-d9bc427186e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tailwind.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/video/picnic.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/video/picnic.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +47,11 @@
       <recent name="D:\JS\untitled\assets\img\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JS\untitled\assets\img\video" />
       <recent name="D:\JS\untitled\assets\img" />
       <recent name="D:\JS\untitled\assets\fonts" />
       <recent name="D:\JS\untitled\assets" />
       <recent name="D:\JS\untitled\img" />
-      <recent name="D:\JS\untitled\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -69,7 +68,7 @@
       <workItem from="1610980031651" duration="8605000" />
       <workItem from="1610999227075" duration="350000" />
       <workItem from="1611005771091" duration="12000" />
-      <workItem from="1611007593624" duration="26252000" />
+      <workItem from="1611007593624" duration="27371000" />
     </task>
     <task id="LOCAL-00001" summary="add daikon">
       <created>1610971869533</created>
@@ -225,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611078526352</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="purge tailwind.css">
+      <created>1611082495212</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611082495212</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +259,8 @@
     <MESSAGE value="Adjust font on contact page for mobile version and fix footer offset on contat page" />
     <MESSAGE value="footer -mt-20 to -mt-40" />
     <MESSAGE value="footer -mt-20 to -mt-28" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer -mt-20 to -mt-28" />
+    <MESSAGE value="purge tailwind.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="purge tailwind.css" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

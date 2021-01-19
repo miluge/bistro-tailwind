@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70285739-79c2-498f-84d2-d9bc427186e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/good_vibes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/water.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/cursor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/menuItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/preloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tailwindcfg.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tailwindcfg.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meniu.html" beforeDir="false" afterPath="$PROJECT_DIR$/meniu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rezervari.html" beforeDir="false" afterPath="$PROJECT_DIR$/rezervari.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +45,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS\untitled\js" />
       <recent name="D:\JS\untitled\assets\img" />
       <recent name="D:\JS\untitled" />
       <recent name="D:\JS\untitled\assets\fonts" />
       <recent name="D:\JS\untitled\assets\img\video" />
-      <recent name="D:\JS\untitled\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JS\untitled\assets\img" />
@@ -73,7 +80,7 @@
       <workItem from="1610980031651" duration="8605000" />
       <workItem from="1610999227075" duration="350000" />
       <workItem from="1611005771091" duration="12000" />
-      <workItem from="1611007593624" duration="17031000" />
+      <workItem from="1611007593624" duration="22295000" />
     </task>
     <task id="LOCAL-00001" summary="add daikon">
       <created>1610971869533</created>
@@ -166,7 +173,28 @@
       <option name="project" value="LOCAL" />
       <updated>1611068124359</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update menu active state">
+      <created>1611068922858</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611068922858</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix footer spacing">
+      <created>1611069005691</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611069005691</updated>
+    </task>
+    <task id="LOCAL-00016" summary="reformat code">
+      <created>1611069042074</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611069042074</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +213,10 @@
     <MESSAGE value="footer remove unnecessary links" />
     <MESSAGE value="new contact page image and fix flex" />
     <MESSAGE value="rezervari add house rules text" />
-    <option name="LAST_COMMIT_MESSAGE" value="rezervari add house rules text" />
+    <MESSAGE value="update menu active state" />
+    <MESSAGE value="fix footer spacing" />
+    <MESSAGE value="reformat code" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformat code" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

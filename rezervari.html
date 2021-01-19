@@ -25,27 +25,16 @@
 
 <!-- Add your site or application content here -->
 <header @keydown.escape="isOpen = false"
-        class="relative flex  w-full overflow-hidden"
+        class="relative flex h-auto w-full overflow-hidden"
         x-data="{ isOpen: false }">
   <!-- Navbar -->
   <nav
     class="relative z-20 top-0 right-0 w-full inline-block px-10 pt-5 text-2xl text-black bg-transparent bg-opacity-50 rounded-xl">
     <div class="flex justify-between items-center">
-      <div class="hidden lg:block">
-        <ul class="flex">
-          <li class="px-4 py-4">
-            <a class="text-menu--item tracking-widest font-bold" href="#">ACASA</a>
-          </li>
-          <li class="px-4 py-4">
-            <a class="text-menu--item tracking-widest" href="#">DESPRE NOI</a>
-          </li>
-          <li class="px-4 py-4">
-            <a class="text-menu--item tracking-widest" href="#">NE GASIM</a>
-          </li>
-        </ul>
-      </div>
       <div>
-        <img alt="Picnic Bistro Logo" class="h-20 lg:h-32" src="assets/img/picnic-logo-white.svg">
+        <a href="index.html">
+          <img alt="Picnic Bistro Logo" class="h-20 lg:h-32" src="assets/img/picnic-logo-black.svg">
+        </a>
       </div>
       <div class="hidden lg:block">
         <ul class="flex">
@@ -53,7 +42,7 @@
             <a class="text-menu--item tracking-widest font-thin" href="meniu.html">MENIU</a>
           </li>
           <li class="px-4 py-4">
-            <a class="text-menu--item tracking-widest" href="#">REZERVARI</a>
+            <a class="text-menu--item tracking-widest" href="rezervari.html">REZERVARI</a>
           </li>
           <li class="px-4 py-4">
             <a class="text-menu--item tracking-widest" href="contact.html">CONTACT</a>
@@ -64,7 +53,7 @@
         <button
           :class="{ 'transition transform-180': isOpen }"
           @click="isOpen = !isOpen"
-          class="block lg:hidden px-2 text-gray-500 hover:text-black focus:outline-none focus:text-text-black"
+          class="block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
           type="button"
         >
           <svg
@@ -100,26 +89,10 @@
       >
         <li class="mr-3">
           <a
-            @click="isOpen = false"
+            @click="isOpen = true"
             class="inline-block py-2 px-4 text-white no-underline"
             href="index.html"
           >HOME
-          </a>
-        </li>
-        <li class="mr-3">
-          <a
-            @click="isOpen = false"
-            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-            href="despre-noi.html"
-          >DESPRE NOI
-          </a>
-        </li>
-        <li class="mr-3">
-          <a
-            @click="isOpen = false"
-            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-            href="ne-gasim.html"
-          >NE GASIM
           </a>
         </li>
         <li class="mr-3">
@@ -151,30 +124,51 @@
   </nav>
   <!-- Mobile Links -->
   <!-- Video Background Element -->
-</header>
-<section class="text-center mt-20">
-  <div class="flex justify-center items-center ">
-    <img src="assets/img/Capturepicpic.png">
-  </div>
-  <div class="container mx-auto grid grid-cols-4">
-    <div class="flex items-center justify-center">
-      <p class="font-sans text-2xl tracking-wide">Luni</p>
-      <p class="font-sans text-2xl tracking-wide py-2">11 - 23</p>
-    </div>
-    <div class="flex items-center justify-center">
-      <p class="font-sans text-2xl tracking-wide">Luni</p>
-      <p class="font-sans text-2xl tracking-wide py-2">11 - 23</p>
-    </div>
-    <div class="flex items-center justify-center">
-      <p class="font-sans text-2xl tracking-wide">Luni</p>
-      <p class="font-sans text-2xl tracking-wide py-2">11 - 23</p>
-    </div>
-    <div class="flex items-center justify-center">
-      <p class="font-sans text-2xl tracking-wide">Luni</p>
-      <p class="font-sans text-2xl tracking-wide py-2">11 - 23</p>
-    </div>
-  </div>
 
+</header>
+<section class="container mx-auto my-20">
+  <div class="text-center">
+    <h2 class="font-sans font-bold text-3xl pb-6 uppercase tracking-widest">Rezervare :</h2>
+    <p class="text-3xl pb-6">+40 742 742 642</p>
+    <p class="text-3xl pb-6">or</p>
+    <p class="text-3xl pb-6">info@picnicbistro.ro</p>
+    <p class="text-xl pb-2">Terasa este structurata pe mese de 3 / 6 persoane </p>
+    <p class="text-xl pb-2">Rezervarile se fac pe cat pe posibil, inainte cu o zi, respectiv 3 zile, pentru grupurile
+      mai mare decat 6 persoane.</p>
+    <p class="text-xl pb-2">Rezervarile se pastreaza 20 de min</p>
+  </div>
+  <div class="text-center my-10">
+    <h2 class="font-sans font-bold text-3xl pb-6 uppercase tracking-widest">Opening Hours : </h2>
+    <div class="flex items-center justify-evenly text-center">
+      <div>
+        <p class="font-sans font-bold text-2xl pb-2">
+          Luni
+        </p>
+        <p class="text-xl"> 11 - 23</p>
+      </div>
+      <div>
+        <p class="font-sans font-bold text-2xl pb-2">
+          Luni
+        </p>
+        <p class="text-xl"> 11 - 23</p>
+      </div>
+      <div>
+        <p class="font-sans font-bold text-2xl pb-2">
+          Luni
+        </p>
+        <p class="text-xl"> 11 - 23</p>
+      </div>
+      <div>
+        <p class="font-sans font-bold text-2xl pb-2">
+          Luni
+        </p>
+        <p class="text-xl"> 11 - 23</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center justify-center">
+    <img class="h-32" src="assets/img/Capturepicpic.png">
+  </div>
 </section>
 <footer class="container mx-auto">
   <div class="flex flex-wrap-reverse lg:flex-nowrap items-center justify-center lg:justify-between">
@@ -184,8 +178,6 @@
     <div class="flex justify-center h-64 w-full lg:w-1/4">
       <ul>
         <li class="font-sans text-2xl font-bold tracking-wide pb-6">SITE MENU</li>
-        <li class="pb-1">Despre noi</li>
-        <li class="pb-1">Ne gasim</li>
         <li class="pb-1">Meniu</li>
         <li class="pb-1">Rezervari</li>
         <li class="pb-1">Contact</li>

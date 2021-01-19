@@ -23,30 +23,109 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <header class="relative flex mb-12 overflow-hidden">
-    <nav class="relative z-30 top-0 left-0 w-full inline-block px-20 pt-5 text-2xl text-white bg-transparent bg-opacity-50 rounded-xl">
-      <div class="flex justify-between items-center">
-        <div>
-          <ul class="flex">
-            <li class="px-4 py-4 text-black font-sans tracking-widest">ACASA</li>
-            <li class="px-4 py-4 text-black font-sans tracking-widest">DESPRE NOI</li>
-            <li class="px-4 py-4 text-black font-sans tracking-widest">UNDE</li>
-          </ul>
-        </div>
-        <div class="">
-          <img class="h-64" src="assets/img/picnic-logo-white.svg">
-        </div>
-        <div>
-          <ul class="flex">
-            <li class="px-4 py-4 text-black font-sans tracking-widest">MENIU</li>
-            <li class="px-4 py-4 text-black font-sans tracking-widest">REZERVARI</li>
-            <li class="px-4 py-4 text-black font-sans tracking-widest">CONTACT</li>
-          </ul>
-        </div>
+<!-- Add your site or application content here -->
+<header @keydown.escape="isOpen = false"
+        class="relative flex h-auto w-full overflow-hidden"
+        x-data="{ isOpen: false }">
+  <!-- Navbar -->
+  <nav
+    class="relative z-20 top-0 right-0 w-full inline-block px-10 pt-5 text-2xl text-black bg-transparent bg-opacity-50 rounded-xl">
+    <div class="flex justify-between items-center">
+      <div>
+        <a href="index.html">
+          <img alt="Picnic Bistro Logo" class="h-20 lg:h-32" src="assets/img/picnic-logo-black.svg">
+        </a>
       </div>
-    </nav>
-  </header>
+      <div class="hidden lg:block">
+        <ul class="flex">
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest font-thin" href="meniu.html">MENIU</a>
+          </li>
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest" href="rezervari.html">REZERVARI</a>
+          </li>
+          <li class="px-4 py-4">
+            <a class="text-menu--item tracking-widest" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          :class="{ 'transition transform-180': isOpen }"
+          @click="isOpen = !isOpen"
+          class="block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+          type="button"
+        >
+          <svg
+            class="h-6 w-6 fill-current"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+              fill-rule="evenodd"
+              x-show="isOpen"
+            />
+            <path
+              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+              fill-rule="evenodd"
+              x-show="!isOpen"
+            />
+          </svg>
+        </button>
+      </div>
+
+
+    </div>
+    <div
+      :class="{ 'block': isOpen, 'hidden': !isOpen }"
+      @click.away="isOpen = false"
+      class="w-full h-full z-50 lg:hidden lg:flex lg:items-center lg:w-auto text-right"
+      x-show.transition="true"
+    >
+      <ul
+        class="pt-6 lg:pt-0 list-reset lg:flex justify-start flex-1 items-center"
+      >
+        <li class="mr-3">
+          <a
+            @click="isOpen = true"
+            class="inline-block py-2 px-4 text-white no-underline"
+            href="index.html"
+          >HOME
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            href="meniu.html"
+          >MENIU
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            href="rezervari.html"
+          >REZERVARI
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            @click="isOpen = false"
+            class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+            href="contact.html"
+          >CONTACT
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Mobile Links -->
+  <!-- Video Background Element -->
+
+</header>
   <main>
    <section class="pt-10">
      <div class="flex items-center justify-center">
